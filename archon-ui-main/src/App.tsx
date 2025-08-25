@@ -9,9 +9,11 @@ import { ThemeProvider } from './contexts/ThemeContext';
 import { ToastProvider } from './contexts/ToastContext';
 import { SettingsProvider, useSettings } from './contexts/SettingsContext';
 import { ProjectPage } from './pages/ProjectPage';
+import { ChatPage } from './pages/ChatPage';
 import { DisconnectScreenOverlay } from './components/DisconnectScreenOverlay';
 import { ErrorBoundaryWithBugReport } from './components/bug-report/ErrorBoundaryWithBugReport';
 import { serverHealthService } from './services/serverHealthService';
+import './styles/chat.css';
 
 const AppRoutes = () => {
   const { projectsEnabled } = useSettings();
@@ -27,6 +29,7 @@ const AppRoutes = () => {
       ) : (
         <Route path="/projects" element={<Navigate to="/" replace />} />
       )}
+      <Route path="/chat" element={<ChatPage />} />
     </Routes>
   );
 };

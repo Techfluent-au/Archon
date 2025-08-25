@@ -33,7 +33,9 @@
     "react-dnd": "^16.0.1",
     "react-dnd-html5-backend": "^16.0.1",
     "react-dom": "^18.3.1",
+    "react-markdown": "^10.1.0",
     "react-router-dom": "^6.26.2",
+    "react-syntax-highlighter": "^15.6.5",
     "socket.io-client": "^4.8.1",
     "tailwind-merge": "latest",
     "zod": "^3.25.46"
@@ -45,6 +47,7 @@
     "@types/node": "^20.19.0",
     "@types/react": "^18.3.1",
     "@types/react-dom": "^18.3.1",
+    "@types/react-syntax-highlighter": "^15.5.13",
     "@typescript-eslint/eslint-plugin": "^5.54.0",
     "@typescript-eslint/parser": "^5.54.0",
     "@vitejs/plugin-react": "^4.2.1",
